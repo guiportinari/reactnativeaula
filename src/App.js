@@ -17,24 +17,27 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack'
 import Familia from "./componentes/relacao/Familia"
 import Membro from "./componentes/relacao/Membro"
 import { SafeAreaView } from "react-native-safe-area-context"
-
+import ListaProdutoV2 from "./componentes/produto/ListaProdutoV2"
 const Stack = createNativeStackNavigator()
 export default () => (
-  <SafeAreaView style={styles.Telainiciante}>
-  <Familia>
-    <Membro nome="Jorge" sobrenome="Pereiras"/>
-    <Membro nome="Edinaldo" sobrenome="Pereiras"/>
-    <Membro nome="Marcinho" sobrenome="Pereiras"/>
-    <Membro nome="Roberta" sobrenome="Pereiras"/>
-   </Familia>
-      <Familia>
-      <Membro nome="Lucas" sobrenome="Da Silva"/>
-      <Membro nome="Fernando" sobrenome="Da Silva"/>
-      <Membro nome="Jorge" sobrenome="Da Silva"/>
-      <Membro nome="Marcia" sobrenome="Da Silva"/>
+  <SafeAreaView style={styles.TelaIniciante}>
+    < ListaProdutoV2/>
+
+   </SafeAreaView> 
+   
+  //  <Familia>
+  //   <Membro nome="Jorge" sobrenome="Pereiras"/>
+  //   <Membro nome="Edinaldo" sobrenome="Pereiras"/>
+  //   <Membro nome="Marcinho" sobrenome="Pereiras"/>
+  //   <Membro nome="Roberta" sobrenome="Pereiras"/>
+  //  </Familia>
+  //     <Familia>
+  //     <Membro nome="Lucas" sobrenome="Da Silva"/>
+  //     <Membro nome="Fernando" sobrenome="Da Silva"/>
+  //     <Membro nome="Jorge" sobrenome="Da Silva"/>
+  //     <Membro nome="Marcia" sobrenome="Da Silva"/>
       
-      </Familia>
-   </SafeAreaView>
+  //     </Familia> 
     // <NavigationContainer>
     //         <Stack.Navigator>
     //             <Stack.Screen name="Home" component={HomeScreen}/>
