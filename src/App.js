@@ -18,13 +18,36 @@ import Familia from "./componentes/relacao/Familia"
 import Membro from "./componentes/relacao/Membro"
 import { SafeAreaView } from "react-native-safe-area-context"
 import ListaProdutoV2 from "./componentes/produto/ListaProdutoV2"
+import Quadrado from "./componentes/layout/Quadrado"
+import FlexboxV1 from "./componentes/layout/FlexboxV1"
+import FlexboxV2 from "./componentes/layout/FlexboxV2"
+import FlexboxV3 from "./componentes/layout/FlexboxV3"
 const Stack = createNativeStackNavigator()
 export default () => (
   <SafeAreaView style={styles.TelaIniciante}>
-    < ListaProdutoV2/>
+   
+   <FlexboxV3/>
+
 
    </SafeAreaView> 
-   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  //Comentarios
+  
+  
+  /* < ListaProdutoV2/> */
   //  <Familia>
   //   <Membro nome="Jorge" sobrenome="Pereiras"/>
   //   <Membro nome="Edinaldo" sobrenome="Pereiras"/>
@@ -76,6 +99,7 @@ const styles = StyleSheet.create({
         flexGrow: 1,
         justifyContent: "center",
         alignItems: "center",
+        padding: 20
     }
 })
 
